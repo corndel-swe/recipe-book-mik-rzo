@@ -14,9 +14,9 @@ main {
 
 img {
   width: 100%;
-  max-width: 600px;
   max-height: 450px;
+  aspect-ratio: 4 / 3;
   display: block;
   margin: 0 auto;
-  object-fit: cover;
+  object-fit: contain;
 }
