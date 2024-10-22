@@ -68,4 +68,26 @@ nav > a {
 		border: 2px solid red;
 		grid-column: span 2;
 	}
+
+	main#egg-recipe-content section.ingredients ul {
+		/* border: 2px solid green; */
+		display: grid;
+		grid-template-columns: 40% 60%;
+	}
+
+	main#egg-recipe-content section.ingredients ul > div:first-child {
+		/* padding-top: 1.5rem;
+		padding-left: 2rem; */
+		border: 1px solid blue;
+	}
+
+  main#egg-recipe-content section.steps > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  main#egg-recipe-content section.steps > div > div:first-child {
+    grid-column: span 2;
+  }
 }
