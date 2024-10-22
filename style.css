@@ -19,10 +19,15 @@ main {
 	margin: auto;
 }
 
-@media (max-width: 800px) {
-	body {
-		font-size: 1rem;
-	}
+body {
+	font-size: 1em;
+}
+
+h3,
+h4,
+b,
+li {
+	font-size: 1.125em;
 }
 
 article {
@@ -49,7 +54,37 @@ nav {
 	font-size: 1.75rem;
 }
 
+section.comments > form {
+	display: flex;
+  flex-direction: column;
+}
+
+section.comments label {
+	border: 1px solid purple;
+	vertical-align: center;
+}
+
+section.comments textarea {
+	padding: 0.75rem;
+	font-family: 'Crimson Pro';
+	font-weight: 400;
+	font-size: 1.125em;
+	max-width: 600px;
+	height: 75px;
+}
+
+section.comments input {
+  width: 180px;
+}
+
 @media (min-width: 800px) {
+	h3,
+  h4,
+	b,
+	li {
+		font-size: 1.25em;
+	}
+
 	main#index {
 		display: flex;
 		flex-direction: column;
