@@ -10,11 +10,13 @@
 	margin: 0;
 }
 
-body {
+main:not(#index) {
 	max-width: 800px;
+}
+
+main {
 	padding: 1rem;
 	margin: auto;
-	font-size: 1.125rem;
 }
 
 @media (max-width: 800px) {
@@ -38,14 +40,42 @@ img {
 	max-height: 450px;
 	display: block;
 	margin: 1rem 0;
-	object-fit: contain;
+	object-fit: cover;
 }
 
-nav > a {
+nav {
+	width: 800px;
+	margin: 0 auto;
 	font-size: 1.75rem;
 }
 
 @media (min-width: 800px) {
+	main#index {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 80%;
+		height: 100vh;
+	}
+
+	main#index h1 {
+		margin: 2.5rem 0;
+		font-size: 3rem;
+	}
+
+	main div:has(article) {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 1rem;
+		border: 2px solid blue;
+	}
+
+	main article {
+		width: 450px;
+	}
+
 	main#chicken-recipe-content {
 		border: 2px solid green;
 		display: grid;
