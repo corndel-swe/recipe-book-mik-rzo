@@ -44,3 +44,26 @@ img {
 nav > a {
   font-size: 1.75rem;
 }
+
+@media (min-width: 800px) {
+  main#chicken-recipe-content {
+    border: 2px solid green;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+
+  main#chicken-recipe-content img {
+    grid-column: 1 / 2;
+  }
+
+  main#chicken-recipe-content section.ingredients {
+    align-self: center;
+    justify-self: center;
+  }
+
+  main#chicken-recipe-content h1, section.steps, section.comments {
+    border: 2px solid red;
+    grid-column: span 2;
+  }
+}
