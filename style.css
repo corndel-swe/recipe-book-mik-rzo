@@ -1,0 +1,18 @@
+:root {
+	font-family: 'Crimson Pro', serif;
+	color: #14252e;
+	background-color: #fbf4e9;
+  --color--accent-1: #cba5e9;
+  --color--accent-2: #ffed8a;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+img {
+  max-height: 512px;
+  display: block;
+  margin: 0 auto;
+}
