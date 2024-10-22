@@ -10,7 +10,7 @@
 	margin: 0;
 }
 
-main {
+body {
 	max-width: 800px;
 	padding: 1rem;
 	margin: auto;
@@ -18,7 +18,7 @@ main {
 }
 
 @media (max-width: 800px) {
-	main {
+	body {
 		font-size: 1rem;
 	}
 }
@@ -28,7 +28,7 @@ article {
 	border: 2px solid red;
 }
 
-h2 {
+article > h2 {
   text-align: center;
 }
 
@@ -39,4 +39,8 @@ img {
 	display: block;
 	margin: 1rem 0;
 	object-fit: contain;
+}
+
+nav > a {
+  font-size: 1.75rem;
 }
