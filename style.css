@@ -173,9 +173,7 @@ section.comments input {
 	}
 
 	main#egg-recipe-content section.ingredients ul > div:first-child {
-		/* padding-top: 1.5rem;
-		padding-left: 2rem; */
-		border: 1px solid blue;
+		padding-top: 1.5rem;
 	}
 
 	main#egg-recipe-content section.steps > div {
