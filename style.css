@@ -170,7 +170,6 @@ section.comments input[type='submit'] {
 	main#chicken-recipe-content h1,
 	main#chicken-recipe-content section.steps,
 	main#chicken-recipe-content section.comments {
-		border: 2px solid red;
 		grid-column: span 2;
 	}
 
@@ -195,7 +194,6 @@ section.comments input[type='submit'] {
 	}
 
 	main#chai-recipe-content > div {
-		border: 2px solid red;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
