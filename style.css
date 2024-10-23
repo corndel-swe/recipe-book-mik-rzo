@@ -179,6 +179,7 @@ section.comments > form {
 	display: flex;
 	flex-direction: column;
 	margin-top: 0.5em;
+	padding-left: 1em;
 	gap: 0.25em;
 }
 
@@ -202,6 +203,19 @@ section.comments input[type='range'] {
 
 section.comments input[type='submit'] {
 	width: fit-content;
+	background-color: var(--color-dark);
+	color: var(--color-light);
+	cursor: pointer;
+	font-size: 1.25em;
+	font-family: 'Crimson Pro', serif;
+	padding: 0.375em;
+	border: none;
+	border-radius: 8px;
+	transition: transform 0.2s ease;
+}
+
+section.comments input[type='submit']:is(:hover, :focus) {
+	transform: scale(1.1);
 }
 
 @media (max-width: 800px) {
