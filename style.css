@@ -47,9 +47,12 @@ li {
 
 article {
 	padding: 1rem;
+	background-color: var(--color-dark);
+	border-radius: 1rem;
 }
 
 article h2 {
+	color: var(--color-light);
 	text-align: center;
 }
 
@@ -60,6 +63,7 @@ img {
 	display: block;
 	margin: 1rem 0;
 	object-fit: cover;
+	border-radius: 1rem;
 }
 
 nav {
@@ -151,8 +155,7 @@ section.comments input[type='submit'] {
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		gap: 1rem;
-		border: 2px solid blue;
+		gap: 2rem;
 	}
 
 	main article {
