@@ -137,6 +137,7 @@ section.comments input {
 	main div:has(article) {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 		align-items: center;
 		gap: 1rem;
 		border: 2px solid blue;
