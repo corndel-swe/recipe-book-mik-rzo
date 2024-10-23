@@ -16,7 +16,7 @@ main:not(#index) {
 
 main {
 	padding: 1rem;
-  padding-top: 0;
+	padding-top: 0;
 	margin: auto;
 }
 
@@ -32,7 +32,7 @@ li {
 }
 
 li {
-  padding-left: 0.5em;
+	padding-left: 0.5em;
 }
 
 article {
@@ -54,45 +54,41 @@ img {
 }
 
 nav {
-  padding: 1rem;
+	padding: 1rem;
 	width: 800px;
 	margin: 0 auto;
 	font-size: 1.75rem;
 }
 
 main#chicken-recipe-content {
-  display: grid;
-  row-gap: 0.5rem;
-  grid-template-rows: repeat(4, auto);
+	display: grid;
+	row-gap: 0.5rem;
+	grid-template-rows: repeat(4, auto);
 }
 
 main#egg-recipe-content {
-  display: grid;
-  row-gap: 0.5rem;
-  grid-template-rows: repeat(5, auto);
+	display: grid;
+	row-gap: 0.5rem;
+	grid-template-rows: repeat(5, auto);
 }
 
 main#chai-recipe-content {
-  display: grid;
-  grid-template-rows: repeat(4, auto);
-  row-gap: 0.5rem;
+	display: grid;
+	grid-template-rows: repeat(4, auto);
+	row-gap: 0.5rem;
 }
 
 main#chai-recipe-content > div {
-  display: grid;
-  grid-template-rows: auto auto;
-  row-gap: 0.5rem;
+	display: grid;
+	grid-template-rows: auto auto;
+	row-gap: 0.5rem;
 }
 
 section.comments > form {
 	display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-section.comments label {
-	border: 1px solid purple;
-	vertical-align: center;
+	flex-direction: column;
+	margin-top: 0.5em;
+	gap: 0.25em;
 }
 
 section.comments textarea {
@@ -106,17 +102,21 @@ section.comments textarea {
 	border-radius: 1em;
 }
 
-section.comments input {
-  width: 180px;
+section.comments input[type='range'] {
+	width: 180px;
+}
+
+section.comments input[type='submit'] {
+	width: fit-content;
 }
 
 @media (min-width: 800px) {
-  nav {
-    padding-top: 2rem;
-  }
+	nav {
+		padding-top: 2rem;
+	}
 
 	h3,
-  h4,
+	h4,
 	b,
 	li {
 		font-size: 1.25em;
@@ -184,7 +184,7 @@ section.comments input {
 
 	main#egg-recipe-content section.steps > div {
 		display: grid;
-    row-gap: 0.5rem;
+		row-gap: 0.5rem;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto auto;
 	}
