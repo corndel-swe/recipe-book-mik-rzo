@@ -160,6 +160,10 @@ section.comments input {
 		justify-self: center;
 	}
 
+	main#chicken-recipe-content section.ingredients h4 {
+		margin-top: 0.5rem;
+	}
+
 	main#chicken-recipe-content h1,
 	main#chicken-recipe-content section.steps,
 	main#chicken-recipe-content section.comments {
