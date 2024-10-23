@@ -104,6 +104,53 @@ nav {
 	font-size: 1.75rem;
 }
 
+main:not(#index) h1,
+main:not(#index) h2,
+main:not(#index) h3 {
+	width: fit-content;
+	position: relative;
+}
+
+main:not(#index) h1::before,
+main:not(#index) h2::before,
+main:not(#index) h3::before {
+	content: '';
+	bottom: 2px;
+	width: 101%;
+	position: absolute;
+	z-index: -1;
+}
+
+main:not(#index) h1::before {
+	height: 10px;
+}
+
+main:not(#index) h2::before {
+	height: 8px;
+}
+
+main:not(#index) h3::before {
+	height: 6px;
+}
+
+main#chicken-recipe-content h1::before,
+main#chicken-recipe-content h2::before,
+main#chicken-recipe-content h3::before {
+	background-color: var(--color--accent-1);
+}
+
+main#egg-recipe-content h1::before,
+main#egg-recipe-content h2::before,
+main#egg-recipe-content h3::before {
+	background-color: var(--color--accent-2);
+}
+
+main#chai-recipe-content h1::before,
+main#chai-recipe-content h2::before,
+main#chai-recipe-content h3::before {
+	background-color: var(--color--accent-3);
+}
+
 main#chicken-recipe-content {
 	display: grid;
 	row-gap: 0.5rem;
