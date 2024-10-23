@@ -52,6 +52,36 @@ article {
 	border-radius: 1rem;
 }
 
+a:nth-child(1) article {
+	box-shadow: var(--color--accent-1) -10px 10px;
+	transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+a:nth-child(1) article:hover {
+	transform: translateY(-10px);
+	box-shadow: var(--color--accent-1) -20px 20px;
+}
+
+a:nth-child(2) article {
+	box-shadow: var(--color--accent-2) -10px 10px;
+	transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+a:nth-child(2) article:hover {
+	transform: translateY(-10px);
+	box-shadow: var(--color--accent-2) -20px 20px;
+}
+
+a:nth-child(3) article {
+	box-shadow: var(--color--accent-3) -10px 10px;
+	transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+a:nth-child(3) article:hover {
+	transform: translateY(-10px);
+	box-shadow: var(--color--accent-3) -20px 20px;
+}
+
 article h2 {
 	color: var(--color-light);
 	text-align: center;
