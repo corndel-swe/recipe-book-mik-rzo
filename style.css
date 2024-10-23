@@ -157,6 +157,15 @@ section.comments input[type='submit'] {
 	width: fit-content;
 }
 
+@media (max-width: 800px) {
+	main#index div {
+		margin-top: 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+}
+
 @media (min-width: 800px) {
 	nav {
 		padding-top: 2rem;
