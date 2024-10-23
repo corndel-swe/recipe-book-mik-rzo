@@ -1,13 +1,19 @@
 :root {
 	font-family: 'Crimson Pro', serif;
-	color: #14252e;
-	background-color: #fbf4e9;
 	--color--accent-1: #cba5e9;
 	--color--accent-2: #ffed8a;
+	--color-dark: #14252e;
+	--color-light: #fbf4e9;
 }
 
 * {
 	margin: 0;
+}
+
+body {
+	font-size: 1em;
+	color: var(--color-light);
+	color: var(--color-dark);
 }
 
 main:not(#index) {
@@ -24,8 +30,8 @@ main#index h1 {
 	margin-top: 1rem;
 }
 
-body {
-	font-size: 1em;
+a {
+	text-decoration: none;
 }
 
 h3,
@@ -41,7 +47,6 @@ li {
 
 article {
 	padding: 1rem;
-	border: 2px solid red;
 }
 
 article h2 {
