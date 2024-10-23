@@ -100,8 +100,10 @@ section.comments textarea {
 	font-family: 'Crimson Pro';
 	font-weight: 400;
 	font-size: 1.125em;
-	max-width: 600px;
-	height: 75px;
+	width: 320px;
+	height: 80px;
+	padding: 1em;
+	border-radius: 1em;
 }
 
 section.comments input {
